@@ -36,7 +36,7 @@ const buttonVariantsObj = {
       ghost: "hover:bg-foreground/[0.06] hover:text-foreground",
       link: "text-primary underline-offset-4 hover:underline",
       gradient:
-        "group overflow-hidden bg-gradient-to-r from-primary via-purple-500 to-fuchsia-500 text-white shadow-glow hover:shadow-glow-lg hover:brightness-110",
+        "group overflow-hidden bg-gradient-to-r from-primary via-blue-500 to-indigo-500 text-white shadow-glow hover:shadow-glow-lg hover:brightness-110",
       glass:
         "glass-card text-foreground hover:border-primary/40 hover:shadow-glow",
     },

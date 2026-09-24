@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import { SILK } from "@/lib/motion"
 
 /**
- * Animated gradient wordmark. Sweeps a violet → fuchsia → cyan ramp.
+ * Animated gradient wordmark. Sweeps a sky → blue → indigo ramp.
  */
 export function GradientText({
   children,

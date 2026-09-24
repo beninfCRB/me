@@ -13,7 +13,7 @@ const entries: TimelineEntry[] = education.map((item) => ({
 
 export function Education() {
   return (
-    <SectionShell id="education" glow="cyan">
+    <SectionShell id="education" glow="sky">
       <SectionHeading
         index="03"
         eyebrow="Academic"

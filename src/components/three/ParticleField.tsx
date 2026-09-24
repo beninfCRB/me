@@ -13,7 +13,7 @@ function mulberry32(seed: number) {
   }
 }
 
-const PALETTE = ["#a855f7", "#ec4899", "#22d3ee", "#c4b5fd", "#f0abfc"]
+const PALETTE = ["#38bdf8", "#3b82f6", "#7dd3fc", "#60a5fa", "#818cf8"]
 
 interface ParticleFieldProps {
   count?: number

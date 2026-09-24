@@ -43,7 +43,7 @@ function ProjectMedia({
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1100ms] ease-silk group-hover:scale-[1.07]"
         />
       ) : (
-        <div className="absolute inset-0 grid place-items-center bg-gradient-to-br from-primary/20 to-fuchsia-500/10">
+        <div className="absolute inset-0 grid place-items-center bg-gradient-to-br from-primary/20 to-indigo-500/10">
           <FallbackIcon className="h-16 w-16 text-primary/50" />
         </div>
       )}
@@ -199,7 +199,7 @@ function ProjectCard({
 
 export function Projects() {
   return (
-    <SectionShell id="projects" glow="violet">
+    <SectionShell id="projects" glow="primary">
       <SectionHeading
         index="04"
         eyebrow="Selected work"

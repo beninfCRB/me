@@ -87,7 +87,7 @@ export function Contact() {
   }
 
   return (
-    <SectionShell id="contact" glow="fuchsia">
+    <SectionShell id="contact" glow="indigo">
       <SectionHeading
         index="05"
         eyebrow="Contact"
@@ -115,7 +115,7 @@ export function Contact() {
                         rel="noopener noreferrer"
                         className="group flex items-center gap-4 rounded-2xl border border-transparent p-3 transition-all duration-500 ease-silk hover:border-foreground/10 hover:bg-foreground/[0.03]"
                       >
-                        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-primary to-fuchsia-500 text-white transition-transform duration-500 ease-silk group-hover:scale-105 group-hover:rotate-6">
+                        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-primary to-indigo-500 text-white transition-transform duration-500 ease-silk group-hover:scale-105 group-hover:rotate-6">
                           <channel.icon className="h-5 w-5" />
                         </span>
                         <span className="min-w-0">

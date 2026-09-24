@@ -89,7 +89,7 @@ export function Navbar() {
           )}
         >
           <a href="#home" className="group flex items-center gap-2.5">
-            <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-full bg-gradient-to-br from-primary via-purple-500 to-fuchsia-500 font-display text-xs font-bold text-white shadow-glow">
+            <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-full bg-gradient-to-br from-primary via-blue-500 to-indigo-500 font-display text-xs font-bold text-white shadow-glow">
               BN
               <span className="absolute inset-0 rounded-full ring-1 ring-inset ring-white/25" />
             </span>

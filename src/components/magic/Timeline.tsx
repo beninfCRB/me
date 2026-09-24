@@ -47,7 +47,7 @@ export function Timeline({
       <motion.div
         aria-hidden="true"
         style={{ scaleY }}
-        className="absolute inset-y-0 left-[22px] w-px origin-top bg-gradient-to-b from-primary via-fuchsia-500 to-cyan-400 md:left-[214px]"
+        className="absolute inset-y-0 left-[22px] w-px origin-top bg-gradient-to-b from-primary via-blue-500 to-sky-400 md:left-[214px]"
       />
 
       <ol className="space-y-6 md:space-y-8">

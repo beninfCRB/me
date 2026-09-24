@@ -103,7 +103,7 @@ function CardSurface({
 
 export function About() {
   return (
-    <SectionShell id="about" glow="violet">
+    <SectionShell id="about" glow="primary">
       <SectionHeading
         index="01"
         eyebrow="About"
@@ -253,7 +253,7 @@ export function About() {
             <div className="relative">
               <span className="eyebrow">Approach</span>
               <div className="mt-4 flex items-start gap-3">
-                <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-primary to-fuchsia-500 text-white">
+                <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-primary to-blue-600 text-white">
                   <Compass className="h-4 w-4" />
                 </span>
                 <p className="text-xs leading-relaxed text-muted-foreground">

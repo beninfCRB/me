@@ -34,7 +34,7 @@ const CHIPS = [
     icon: Code2,
     label: "Full-Stack",
     value: "Developer",
-    accent: "from-blue-500 to-cyan-400",
+    accent: "from-sky-400 to-blue-600",
     className: "-left-5 top-10 sm:-left-10",
     float: "7s",
     delay: "0s",
@@ -44,7 +44,7 @@ const CHIPS = [
     icon: Gauge,
     label: "Performance",
     value: "Optimized",
-    accent: "from-fuchsia-500 to-pink-500",
+    accent: "from-indigo-500 to-blue-600",
     className: "-right-3 bottom-20 sm:-right-9",
     float: "9s",
     delay: "-2.5s",
@@ -54,7 +54,7 @@ const CHIPS = [
     icon: Layers,
     label: "Architecture",
     value: "Microservices",
-    accent: "from-violet-500 to-purple-600",
+    accent: "from-blue-500 to-cyan-500",
     className: "-left-3 bottom-6 sm:-left-8",
     float: "8s",
     delay: "-4.5s",
@@ -207,7 +207,7 @@ export function Hero() {
                 <div className="relative aspect-square w-full overflow-hidden rounded-[2rem]">
                   <div
                     aria-hidden="true"
-                    className="absolute inset-0 animate-spin-slow bg-[conic-gradient(from_0deg,hsl(var(--primary)/0.34),rgba(236,72,153,0.3),rgba(34,211,238,0.28),hsl(var(--primary)/0.34))] opacity-70 blur-2xl"
+                    className="absolute inset-0 animate-spin-slow bg-[conic-gradient(from_0deg,hsl(var(--primary)/0.34),rgba(59,130,246,0.3),rgba(125,211,252,0.28),hsl(var(--primary)/0.34))] opacity-70 blur-2xl"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background/60" />
 
@@ -223,7 +223,7 @@ export function Hero() {
                   />
                   <div
                     aria-hidden="true"
-                    className="absolute inset-[4.5rem] rounded-full border border-cyan-400/20"
+                    className="absolute inset-[4.5rem] rounded-full border border-sky-400/25"
                   />
 
                   <div

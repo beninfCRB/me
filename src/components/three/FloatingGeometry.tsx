@@ -2,10 +2,10 @@ import * as React from "react"
 import { useFrame } from "@react-three/fiber"
 import * as THREE from "three"
 
-const VIOLET = "#8b5cf6"
-const FUCHSIA = "#ec4899"
-const CYAN = "#22d3ee"
-const INDIGO = "#818cf8"
+const SKY = "#38bdf8"
+const BLUE = "#3b82f6"
+const LIGHT_SKY = "#7dd3fc"
+const INDIGO = "#6366f1"
 
 type ShapeKind = "orb" | "knot" | "ring" | "shard" | "gem" | "wire"
 
@@ -31,7 +31,7 @@ const SHAPES: ShapeSpec[] = [
     scale: 0.7,
     speed: 0.16,
     bob: 0.34,
-    color: CYAN,
+    color: SKY,
   },
   {
     kind: "ring",
@@ -40,7 +40,7 @@ const SHAPES: ShapeSpec[] = [
     scale: 0.85,
     speed: -0.12,
     bob: 0.42,
-    color: FUCHSIA,
+    color: BLUE,
   },
   {
     kind: "shard",
@@ -49,7 +49,7 @@ const SHAPES: ShapeSpec[] = [
     scale: 0.75,
     speed: 0.22,
     bob: 0.5,
-    color: VIOLET,
+    color: SKY,
   },
   {
     kind: "gem",
@@ -67,7 +67,7 @@ const SHAPES: ShapeSpec[] = [
     scale: 0.9,
     speed: -0.18,
     bob: 0.44,
-    color: VIOLET,
+    color: BLUE,
   },
   {
     kind: "orb",
@@ -76,7 +76,7 @@ const SHAPES: ShapeSpec[] = [
     scale: 0.9,
     speed: 0.2,
     bob: 0.3,
-    color: CYAN,
+    color: LIGHT_SKY,
   },
   {
     kind: "shard",
@@ -85,7 +85,7 @@ const SHAPES: ShapeSpec[] = [
     scale: 0.6,
     speed: -0.24,
     bob: 0.52,
-    color: FUCHSIA,
+    color: INDIGO,
   },
   {
     kind: "ring",
@@ -94,7 +94,7 @@ const SHAPES: ShapeSpec[] = [
     scale: 0.62,
     speed: 0.26,
     bob: 0.4,
-    color: VIOLET,
+    color: BLUE,
   },
   {
     kind: "wire",
@@ -272,8 +272,8 @@ export function BreathingGem({
     <group position={position}>
       <mesh ref={crystal} geometry={geometry}>
         <meshStandardMaterial
-          color="#4c1d95"
-          emissive="#a855f7"
+          color="#172554"
+          emissive="#38bdf8"
           emissiveIntensity={0.75}
           roughness={0.16}
           metalness={0.72}
@@ -283,7 +283,7 @@ export function BreathingGem({
       <mesh ref={shell}>
         <icosahedronGeometry args={[1.92, 1]} />
         <meshBasicMaterial
-          color={CYAN}
+          color={LIGHT_SKY}
           wireframe
           transparent
           opacity={0.16}
@@ -292,7 +292,7 @@ export function BreathingGem({
         />
       </mesh>
       <pointLight
-        color={VIOLET}
+        color={SKY}
         intensity={26}
         distance={9}
         decay={2}

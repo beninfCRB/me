@@ -137,13 +137,13 @@ export function SectionShell({
   id?: string
   children: React.ReactNode
   className?: string
-  glow?: "violet" | "fuchsia" | "cyan"
+  glow?: "primary" | "indigo" | "sky"
 }) {
   const glowClass = glow
     ? {
-        violet: "from-primary/25",
-        fuchsia: "from-fuchsia-500/20",
-        cyan: "from-cyan-400/20",
+        primary: "from-primary/25",
+        indigo: "from-indigo-500/20",
+        sky: "from-sky-400/20",
       }[glow]
     : null
 

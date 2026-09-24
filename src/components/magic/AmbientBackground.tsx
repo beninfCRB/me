@@ -98,13 +98,13 @@ export function AmbientBackground({ children }: AmbientBackgroundProps) {
           className="absolute inset-0 will-change-transform"
         >
           <AuroraOrb
-            color="rgb(var(--art-violet) / 0.55)"
+            color="rgb(var(--art-sky) / 0.55)"
             duration="24s"
             delay="0s"
             className="-left-[12%] -top-[18%] h-[46rem] w-[46rem]"
           />
           <AuroraOrb
-            color="rgb(var(--art-fuchsia) / 0.45)"
+            color="rgb(var(--art-azure) / 0.45)"
             duration="31s"
             delay="-6s"
             className="-right-[16%] top-[6%] h-[38rem] w-[38rem]"
@@ -116,7 +116,7 @@ export function AmbientBackground({ children }: AmbientBackgroundProps) {
           className="absolute inset-0 will-change-transform"
         >
           <AuroraOrb
-            color="rgb(var(--art-cyan) / 0.32)"
+            color="rgb(var(--art-indigo) / 0.32)"
             duration="28s"
             delay="-12s"
             className="bottom-[-22%] left-[24%] h-[34rem] w-[34rem]"

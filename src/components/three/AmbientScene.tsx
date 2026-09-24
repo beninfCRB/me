@@ -69,21 +69,21 @@ export default function AmbientScene({
         <directionalLight
           position={[5, 6, 4]}
           intensity={1.5}
-          color="#ede9fe"
+          color="#e0f2fe"
         />
         <pointLight
           position={[-6, -2, 2]}
           intensity={38}
           distance={24}
           decay={2}
-          color="#ec4899"
+          color="#3b82f6"
         />
         <pointLight
           position={[6, 3, -2]}
           intensity={30}
           distance={24}
           decay={2}
-          color="#22d3ee"
+          color="#7dd3fc"
         />
 
         <CameraRig enabled={animate} intensity={1} />

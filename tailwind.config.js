@@ -45,16 +45,16 @@ export default {
           foreground: "hsl(var(--popover-foreground))",
         },
         /* Artistic palette used by the 3D + aurora layers */
-        ink: "#0b0910",
-        violet: {
-          glow: "#a855f7",
-          deep: "#6d28d9",
+        ink: "#030b18",
+        ocean: {
+          glow: "#38bdf8",
+          deep: "#1d4ed8",
         },
-        fuchsia: {
-          glow: "#ec4899",
+        azure: {
+          glow: "#3b82f6",
         },
-        cyan: {
-          glow: "#22d3ee",
+        sky: {
+          glow: "#7dd3fc",
         },
       },
       borderRadius: {
@@ -72,7 +72,7 @@ export default {
       boxShadow: {
         glow: "0 0 40px -12px hsl(var(--primary) / 0.65)",
         "glow-lg": "0 0 90px -20px hsl(var(--primary) / 0.7)",
-        "glow-fuchsia": "0 0 50px -14px rgba(236, 72, 153, 0.65)",
+        "glow-sky": "0 0 50px -14px rgba(56, 189, 248, 0.65)",
         "inner-top": "inset 0 1px 0 0 rgb(255 255 255 / 0.08)",
         depth: "0 30px 60px -30px rgb(0 0 0 / 0.6)",
       },
@@ -85,7 +85,7 @@ export default {
         "grid-fade":
           "linear-gradient(to right, hsl(var(--foreground) / 0.06) 1px, transparent 1px), linear-gradient(to bottom, hsl(var(--foreground) / 0.06) 1px, transparent 1px)",
         "art-gradient":
-          "linear-gradient(120deg, #a855f7 0%, #ec4899 45%, #22d3ee 100%)",
+          "linear-gradient(120deg, #38bdf8 0%, #3b82f6 45%, #1d4ed8 100%)",
       },
       backgroundSize: {
         "size-200": "200% 200%",

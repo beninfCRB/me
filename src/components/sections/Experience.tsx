@@ -14,7 +14,7 @@ const entries: TimelineEntry[] = experiences.map((item) => ({
 
 export function Experience() {
   return (
-    <SectionShell id="experience" glow="fuchsia">
+    <SectionShell id="experience" glow="indigo">
       <SectionHeading
         index="02"
         eyebrow="Career"

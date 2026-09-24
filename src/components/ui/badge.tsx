@@ -12,7 +12,7 @@ const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
       secondary: "bg-secondary text-secondary-foreground",
       outline: "border border-input text-foreground",
       gradient:
-        "bg-gradient-to-r from-primary/10 to-purple-600/10 text-primary border-primary/20",
+        "bg-gradient-to-r from-primary/10 to-blue-600/10 text-primary border-primary/20",
     }
     return (
       <div
