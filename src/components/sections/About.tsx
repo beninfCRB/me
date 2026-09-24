@@ -14,7 +14,7 @@ export function About() {
   ]
 
   return (
-    <section id="about" className="py-20 md:py-32">
+    <section id="about" className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4">
         <SectionTitle
           title="About Me"
@@ -28,7 +28,7 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Card className="p-6 md:p-8">
+            <Card className="p-6 md:p-8 glass-card">
               <div className="flex items-start gap-4 mb-6">
                 <Avatar
                   src="/avatar.jpg"
@@ -51,28 +51,28 @@ export function About() {
               </p>
 
               <div className="grid grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-accent/5">
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5">
                   <Briefcase className="h-5 w-5 text-primary" />
                   <div>
                     <div className="text-xs text-muted-foreground">Experience</div>
                     <div className="font-semibold text-sm">5+ Years</div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-accent/5">
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5">
                   <Award className="h-5 w-5 text-primary" />
                   <div>
                     <div className="text-xs text-muted-foreground">Education</div>
                     <div className="font-semibold text-sm">Master's Degree</div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-accent/5">
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5">
                   <Calendar className="h-5 w-5 text-primary" />
                   <div>
                     <div className="text-xs text-muted-foreground">Current</div>
                     <div className="font-semibold text-sm">Master's Student</div>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-accent/5">
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5">
                   <MapPin className="h-5 w-5 text-primary" />
                   <div>
                     <div className="text-xs text-muted-foreground">Location</div>
@@ -93,7 +93,7 @@ export function About() {
             {stats.map((stat, index) => (
               <Card
                 key={index}
-                className="p-6 text-center hover:shadow-lg transition-shadow"
+                className="p-6 text-center glass-card hover:shadow-lg transition-shadow"
               >
                 <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                   {stat.value}+

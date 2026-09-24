@@ -3,7 +3,7 @@ import { techLogos } from "@/data/portfolio"
 
 const TechMarquee = () => {
   return (
-    <section className="py-12 border-y border-border bg-card/30 overflow-hidden">
+    <section className="py-12 border-y border-white/10 bg-black/20 backdrop-blur-sm overflow-hidden relative">
       <div className="container mx-auto px-4 mb-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ const TechMarquee = () => {
           {[...techLogos, ...techLogos].map((tech, index) => (
             <div
               key={index}
-              className="flex items-center gap-2 mx-8 px-4 py-2 rounded-full bg-card/50 border border-border text-sm font-medium text-muted-foreground whitespace-nowrap"
+              className="flex items-center gap-2 mx-8 px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm font-medium text-muted-foreground whitespace-nowrap"
             >
               <span className="h-2 w-2 rounded-full bg-gradient-to-r from-primary to-purple-600" />
               {tech}

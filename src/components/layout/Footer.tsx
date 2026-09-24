@@ -15,7 +15,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="border-t border-border bg-card/50">
+    <footer className="border-t border-white/10 bg-black/20 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col items-center text-center">
           <a
@@ -36,7 +36,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={link.label}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background hover:bg-accent/10 hover:text-accent transition-all duration-300 hover:-translate-y-1"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 hover:bg-white/10 hover:text-primary transition-all duration-300 hover:-translate-y-1"
               >
                 <link.icon className="h-5 w-5" />
               </a>
@@ -47,7 +47,7 @@ export function Footer() {
             <p>{personal.location} &middot; {personal.phone}</p>
           </div>
 
-          <div className="w-full max-w-md h-px bg-gradient-to-r from-transparent via-border to-transparent mb-8" />
+          <div className="w-full max-w-md h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8" />
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
             <p className="flex items-center gap-1">

@@ -17,7 +17,7 @@ const navItems = [
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +40,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm"
+          ? "bg-background/80 backdrop-blur-lg border-b border-white/10 shadow-sm"
           : "bg-transparent"
       )}
     >
@@ -54,7 +54,6 @@ export function Navbar() {
             BN
           </motion.a>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
@@ -82,9 +81,8 @@ export function Navbar() {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-accent/10"
+            className="md:hidden p-2 rounded-lg hover:bg-white/5"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -95,7 +93,6 @@ export function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <motion.div
           initial={false}
           animate={{

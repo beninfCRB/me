@@ -8,7 +8,7 @@ const categories = ["Frontend", "Backend", "DevOps", "Database", "Architecture"]
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 md:py-32 bg-card/30">
+    <section id="skills" className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Skills & Expertise"
@@ -24,7 +24,7 @@ export function Skills() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <Card className="p-6 h-full">
+              <Card className="p-6 h-full glass-card">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-white">
                     <span className="text-lg font-bold">
@@ -47,7 +47,7 @@ export function Skills() {
                             {skill.level}%
                           </span>
                         </div>
-                        <div className="h-2 w-full rounded-full bg-muted overflow-hidden">
+                        <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
                           <motion.div
                             initial={{ width: 0 }}
                             whileInView={{ width: `${skill.level}%` }}
@@ -76,7 +76,7 @@ export function Skills() {
           className="mt-12 flex flex-wrap justify-center gap-3"
         >
           {skills.map((skill, index) => (
-            <Badge key={index} variant="outline" className="text-sm py-1.5 px-3">
+            <Badge key={index} variant="outline" className="text-sm py-1.5 px-3 glass-card">
               {skill.name}
             </Badge>
           ))}

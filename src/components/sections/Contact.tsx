@@ -34,7 +34,7 @@ const socialLinks = [
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 md:py-32 bg-card/30">
+    <section id="contact" className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Get In Touch"
@@ -48,7 +48,7 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Card className="p-6 md:p-8">
+            <Card className="p-6 md:p-8 glass-card">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
 
               <div className="space-y-4">
@@ -56,7 +56,7 @@ export function Contact() {
                   <a
                     key={index}
                     href={item.href}
-                    className="flex items-center gap-4 p-4 rounded-lg hover:bg-accent/5 transition-colors group"
+                    className="flex items-center gap-4 p-4 rounded-lg hover:bg-white/5 transition-colors group"
                   >
                     <div className="h-12 w-12 rounded-lg bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                       <item.icon className="h-6 w-6" />
@@ -73,7 +73,7 @@ export function Contact() {
                 ))}
               </div>
 
-              <div className="mt-8 pt-6 border-t border-border">
+              <div className="mt-8 pt-6 border-t border-white/10">
                 <p className="text-sm text-muted-foreground mb-4">
                   Follow me on social media
                 </p>
@@ -85,7 +85,7 @@ export function Contact() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={link.label}
-                      className="h-10 w-10 rounded-lg border border-border flex items-center justify-center hover:bg-accent/10 hover:text-accent transition-all hover:-translate-y-1"
+                      className="h-10 w-10 rounded-lg border border-white/10 flex items-center justify-center hover:bg-white/5 hover:text-primary transition-all hover:-translate-y-1"
                     >
                       <link.icon className="h-5 w-5" />
                     </a>
@@ -101,7 +101,7 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Card className="p-6 md:p-8">
+            <Card className="p-6 md:p-8 glass-card">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
 
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -113,7 +113,7 @@ export function Contact() {
                     <input
                       type="text"
                       required
-                      className="w-full px-4 py-2 rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-ring"
+                      className="w-full px-4 py-2 rounded-lg border border-white/10 bg-white/5 focus:outline-none focus:ring-2 focus:ring-ring"
                       placeholder="Your name"
                     />
                   </div>
@@ -124,7 +124,7 @@ export function Contact() {
                     <input
                       type="email"
                       required
-                      className="w-full px-4 py-2 rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-ring"
+                      className="w-full px-4 py-2 rounded-lg border border-white/10 bg-white/5 focus:outline-none focus:ring-2 focus:ring-ring"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -137,7 +137,7 @@ export function Contact() {
                   <input
                     type="text"
                     required
-                    className="w-full px-4 py-2 rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full px-4 py-2 rounded-lg border border-white/10 bg-white/5 focus:outline-none focus:ring-2 focus:ring-ring"
                     placeholder="Project inquiry"
                   />
                 </div>
@@ -149,7 +149,7 @@ export function Contact() {
                   <textarea
                     required
                     rows={5}
-                    className="w-full px-4 py-2 rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-ring resize-none"
+                    className="w-full px-4 py-2 rounded-lg border border-white/10 bg-white/5 focus:outline-none focus:ring-2 focus:ring-ring resize-none"
                     placeholder="Tell me about your project..."
                   />
                 </div>

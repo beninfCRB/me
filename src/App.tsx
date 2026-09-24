@@ -9,6 +9,7 @@ import { Education } from "@/components/sections/Education"
 import { Projects } from "@/components/sections/Projects"
 import { Contact } from "@/components/sections/Contact"
 import TechMarquee from "@/components/sections/TechMarquee"
+import { AnimatedBackground } from "@/components/magic/ParticleBackground"
 
 function App() {
   useEffect(() => {
@@ -29,20 +30,22 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <main>
-        <Hero />
-        <TechMarquee />
-        <About />
-        <Skills />
-        <Experience />
-        <Education />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <AnimatedBackground particleCount={40}>
+      <div className="min-h-screen bg-background text-foreground">
+        <Navbar />
+        <main>
+          <Hero />
+          <TechMarquee />
+          <About />
+          <Skills />
+          <Experience />
+          <Education />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </AnimatedBackground>
   )
 }
 

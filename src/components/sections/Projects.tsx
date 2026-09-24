@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { ExternalLink, Github, Eye, Code, Database, Globe } from "lucide-react"
 import { SectionTitle } from "@/components/magic/Stats"
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { Card, CardHeader, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { projects } from "@/data/portfolio"
@@ -14,7 +14,7 @@ const getProjectIcon = (index: number) => {
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 md:py-32">
+    <section id="projects" className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Featured Projects"
@@ -32,7 +32,7 @@ export function Projects() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="h-full flex flex-col overflow-hidden group hover:shadow-xl transition-all">
+                <Card className="h-full flex flex-col overflow-hidden glass-card group hover:shadow-xl transition-all">
                   <div className="relative h-48 bg-gradient-to-br from-primary/20 to-purple-600/20 flex items-center justify-center overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-purple-600/10 group-hover:scale-110 transition-transform duration-500" />
                     <Icon className="h-20 w-20 text-primary/40 group-hover:scale-125 transition-transform duration-500" />

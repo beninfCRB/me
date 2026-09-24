@@ -7,7 +7,7 @@ import { experiences } from "@/data/portfolio"
 
 export function Experience() {
   return (
-    <section id="experience" className="py-20 md:py-32">
+    <section id="experience" className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Work Experience"
@@ -35,7 +35,7 @@ export function Experience() {
                 )}
               </div>
 
-              <Card className="flex-1 p-6 hover:shadow-lg transition-shadow">
+              <Card className="flex-1 p-6 glass-card hover:shadow-lg transition-shadow">
                 <CardHeader className="p-0 mb-4">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                     <div>
