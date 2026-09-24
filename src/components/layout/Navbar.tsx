@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils"
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
   { name: "Experience", href: "#experience" },
   { name: "Education", href: "#education" },
   { name: "Projects", href: "#projects" },
@@ -20,6 +19,17 @@ export function Navbar() {
   const [isDark, setIsDark] = useState(true)
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem("theme")
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+    const initialDark = savedTheme ? savedTheme === "dark" : prefersDark
+
+    setIsDark(initialDark)
+    if (initialDark) {
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+    }
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
@@ -28,8 +38,16 @@ export function Navbar() {
   }, [])
 
   const toggleDarkMode = () => {
-    setIsDark(!isDark)
-    document.documentElement.classList.toggle("dark")
+    setIsDark((prev) => {
+      const next = !prev
+      localStorage.setItem("theme", next ? "dark" : "light")
+      if (next) {
+        document.documentElement.classList.add("dark")
+      } else {
+        document.documentElement.classList.remove("dark")
+      }
+      return next
+    })
   }
 
   return (
@@ -73,6 +91,7 @@ export function Navbar() {
               size="icon"
               onClick={toggleDarkMode}
               className="rounded-full"
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             >
               {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>

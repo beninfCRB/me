@@ -99,7 +99,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative flex items-center justify-center"
           >
-            <div className="relative">
+            <div className="relative w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64">
               <Avatar
                 src="profile.png"
                 alt={personal.name}
@@ -109,9 +109,9 @@ export function Hero() {
               />
 
               <FloatingElement
-                x={30}
-                y={30}
-                className="absolute -top-4 -left-4"
+                x={20}
+                y={20}
+                className="absolute -top-10 -left-16 md:-top-12 md:-left-24"
               >
                 <div className="flex items-center gap-2 rounded-xl bg-card/80 backdrop-blur-sm border border-border p-3 shadow-lg">
                   <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold">
@@ -125,9 +125,9 @@ export function Hero() {
               </FloatingElement>
 
               <FloatingElement
-                x={-40}
-                y={30}
-                className="absolute -bottom-4 -right-4"
+                x={-30}
+                y={25}
+                className="absolute -bottom-8 -right-12 md:-bottom-10 md:-right-24"
               >
                 <div className="flex items-center gap-2 rounded-xl bg-card/80 backdrop-blur-sm border border-border p-3 shadow-lg">
                   <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold">
@@ -141,9 +141,9 @@ export function Hero() {
               </FloatingElement>
 
               <FloatingElement
-                x={20}
-                y={50}
-                className="absolute top-1/2 -right-2"
+                x={15}
+                y={35}
+                className="absolute top-[75%] -left-10 md:top-[70%] md:-left-16"
               >
                 <div className="flex items-center gap-2 rounded-xl bg-card/80 backdrop-blur-sm border border-border p-3 shadow-lg">
                   <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center text-white font-bold">
