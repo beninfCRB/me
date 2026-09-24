@@ -1,10 +1,13 @@
-import { motion } from "framer-motion"
-import { ArrowDown, Mail, Github } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { personal } from "@/data/portfolio"
-import { FloatingElement, GradientBlob } from "@/components/magic/FloatingElements"
-import { GradientText, WordFadeUp } from "@/components/magic/AnimatedText"
-import { Avatar } from "@/components/ui/avatar"
+import { motion } from "framer-motion";
+import { ArrowDown, Mail, Github } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { personal } from "@/data/portfolio";
+import {
+  FloatingElement,
+  GradientBlob,
+} from "@/components/magic/FloatingElements";
+import { GradientText, WordFadeUp } from "@/components/magic/AnimatedText";
+import { Avatar } from "@/components/ui/avatar";
 
 export function Hero() {
   return (
@@ -105,7 +108,7 @@ export function Hero() {
                 alt={personal.name}
                 fallback="BN"
                 size="xl"
-                className="mx-auto ring-4 ring-primary/20 shadow-2xl"
+                className="mx-auto ring-4 ring-primary/20 shadow-2xl size-20"
               />
 
               <FloatingElement
@@ -118,7 +121,9 @@ export function Hero() {
                     💻
                   </div>
                   <div>
-                    <div className="text-xs text-muted-foreground">Full-Stack</div>
+                    <div className="text-xs text-muted-foreground">
+                      Full-Stack
+                    </div>
                     <div className="text-sm font-semibold">Developer</div>
                   </div>
                 </div>
@@ -134,7 +139,9 @@ export function Hero() {
                     🚀
                   </div>
                   <div>
-                    <div className="text-xs text-muted-foreground">Performance</div>
+                    <div className="text-xs text-muted-foreground">
+                      Performance
+                    </div>
                     <div className="text-sm font-semibold">Optimized</div>
                   </div>
                 </div>
@@ -172,5 +179,5 @@ export function Hero() {
         <ArrowDown className="h-5 w-5 animate-bounce" />
       </motion.a>
     </section>
-  )
+  );
 }

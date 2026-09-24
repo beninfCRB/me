@@ -5,7 +5,7 @@ interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
   src?: string
   alt?: string
   fallback?: string
-  size?: "sm" | "md" | "lg" | "xl"
+  size?: "sm" | "md" | "lg" | "xl" | "2xl"
 }
 
 const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
@@ -16,6 +16,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
       md: "h-10 w-10 text-sm",
       lg: "h-12 w-12 text-base",
       xl: "h-20 w-20 text-lg",
+      "2xl": "h-40 w-40 text-xl",
     }
 
     return (

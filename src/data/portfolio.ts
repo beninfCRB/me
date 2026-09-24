@@ -39,7 +39,7 @@ export const personal = {
   email: "beninf10@gmail.com",
   phone: "+62 895-066-84977",
   linkedin: "beni-nurfauzi",
-  github: "beni-nurfauzi",
+  github: "beninfCRB",
   bio: "A highly driven Software Engineer with robust experience in full-stack web development and microservice architecture. Currently pursuing a Master's degree in Computer Science specializing in Digital Transformation Intelligence and enterprise architecture. Demonstrated success in leading the development of core public applications and large-scale cargo ERP systems.",
   tagline: "Building scalable digital solutions for the future",
 };
