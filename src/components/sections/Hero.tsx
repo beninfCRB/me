@@ -107,8 +107,8 @@ export function Hero() {
                 src="profile.png"
                 alt={personal.name}
                 fallback="BN"
-                size="xl"
-                className="mx-auto ring-4 ring-primary/20 shadow-2xl size-20"
+                size="2xl"
+                className="mx-auto ring-4 ring-primary/20 shadow-2xl"
               />
 
               <FloatingElement
