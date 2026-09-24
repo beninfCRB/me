@@ -52,58 +52,58 @@ export function ParticleBackground({
         className
       )}
     >
-      {/* Gradient Orbs */}
+      {/* Animated gradient mesh */}
       <motion.div
-        className="absolute w-[600px] h-[600px] rounded-full blur-[120px] opacity-40"
+        className="absolute w-[800px] h-[800px] rounded-full blur-[150px] opacity-30"
         style={{
-          background: "radial-gradient(circle, rgba(168,85,247,0.4), transparent 70%)",
-          top: "-15%",
-          left: "-10%",
+          background: "radial-gradient(circle, rgba(168,85,247,0.35), transparent 70%)",
+          top: "-25%",
+          left: "-15%",
         }}
         animate={{
-          x: [0, 100, 50, 0],
-          y: [0, 50, 100, 0],
-          scale: [1, 1.2, 0.9, 1],
+          x: [0, 150, 80, 0],
+          y: [0, 80, 150, 0],
+          scale: [1, 1.3, 0.85, 1],
         }}
         transition={{
-          duration: 25,
+          duration: 30,
           repeat: Infinity,
           ease: "easeInOut",
         }}
       />
       <motion.div
-        className="absolute w-[500px] h-[500px] rounded-full blur-[100px] opacity-30"
+        className="absolute w-[700px] h-[700px] rounded-full blur-[130px] opacity-25"
         style={{
-          background: "radial-gradient(circle, rgba(236,72,153,0.4), transparent 70%)",
-          top: "40%",
-          right: "-10%",
+          background: "radial-gradient(circle, rgba(236,72,153,0.35), transparent 70%)",
+          top: "35%",
+          right: "-20%",
         }}
         animate={{
-          x: [0, -80, -30, 0],
-          y: [0, 60, -40, 0],
-          scale: [1, 1.1, 0.95, 1],
+          x: [0, -120, -50, 0],
+          y: [0, 90, -60, 0],
+          scale: [1, 1.15, 0.9, 1],
         }}
         transition={{
-          duration: 20,
+          duration: 25,
           repeat: Infinity,
           ease: "easeInOut",
           delay: 2,
         }}
       />
       <motion.div
-        className="absolute w-[450px] h-[450px] rounded-full blur-[100px] opacity-25"
+        className="absolute w-[600px] h-[600px] rounded-full blur-[120px] opacity-20"
         style={{
-          background: "radial-gradient(circle, rgba(59,130,246,0.4), transparent 70%)",
-          bottom: "-10%",
-          left: "30%",
+          background: "radial-gradient(circle, rgba(59,130,246,0.35), transparent 70%)",
+          bottom: "-15%",
+          left: "25%",
         }}
         animate={{
-          x: [0, 60, -40, 0],
-          y: [0, -50, 30, 0],
-          scale: [1, 1.15, 0.9, 1],
+          x: [0, 90, -50, 0],
+          y: [0, -70, 40, 0],
+          scale: [1, 1.25, 0.85, 1],
         }}
         transition={{
-          duration: 22,
+          duration: 28,
           repeat: Infinity,
           ease: "easeInOut",
           delay: 4,
@@ -112,37 +112,36 @@ export function ParticleBackground({
 
       {/* Animated Grid */}
       <div
-        className="absolute inset-0 opacity-[0.02]"
+        className="absolute inset-0 opacity-[0.015]"
         style={{
           backgroundImage: `
             linear-gradient(to right, currentColor 1px, transparent 1px),
             linear-gradient(to bottom, currentColor 1px, transparent 1px)
           `,
-          backgroundSize: "60px 60px",
+          backgroundSize: "80px 80px",
         }}
       />
 
-      {/* Moving Grid Overlay */}
       <motion.div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage: `
             linear-gradient(to right, currentColor 1px, transparent 1px),
             linear-gradient(to bottom, currentColor 1px, transparent 1px)
           `,
-          backgroundSize: "60px 60px",
+          backgroundSize: "80px 80px",
         }}
         animate={{
-          backgroundPosition: ["0 0", "60px 60px"],
+          backgroundPosition: ["0 0", "80px 80px"],
         }}
         transition={{
-          duration: 8,
+          duration: 12,
           repeat: Infinity,
           ease: "linear",
         }}
       />
 
-      {/* Particles */}
+      {/* Ambient particles */}
       {particles.map((p) => (
         <motion.div
           key={p.id}
@@ -156,8 +155,8 @@ export function ParticleBackground({
             boxShadow: `0 0 ${p.size * 2}px ${p.color}`,
           }}
           animate={{
-            y: [0, -100, 0],
-            x: [0, 50, 0],
+            y: [0, -120, 0],
+            x: [0, 60, 0],
             opacity: [0, 1, 0],
           }}
           transition={{
@@ -173,7 +172,7 @@ export function ParticleBackground({
       <div
         className="absolute inset-0"
         style={{
-          background: "radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.3) 100%)",
+          background: "radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.4) 100%)",
         }}
       />
     </div>
@@ -192,7 +191,7 @@ export function AnimatedBackground({
   return (
     <div className={cn("relative min-h-screen", className)}>
       <ParticleBackground particleCount={particleCount} />
-      <Floating3DParticles count={36} />
+      <Floating3DParticles count={60} />
       {children}
     </div>
   )
