@@ -34,8 +34,16 @@ export function Projects() {
               >
                 <Card className="h-full flex flex-col overflow-hidden glass-card group hover:shadow-xl transition-all">
                   <div className="relative h-48 bg-gradient-to-br from-primary/20 to-purple-600/20 flex items-center justify-center overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-purple-600/10 group-hover:scale-110 transition-transform duration-500" />
-                    <Icon className="h-20 w-20 text-primary/40 group-hover:scale-125 transition-transform duration-500" />
+                    {project.image ? (
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    ) : (
+                      <Icon className="h-20 w-20 text-primary/40 group-hover:scale-125 transition-transform duration-500" />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                     <div className="absolute top-4 right-4 flex gap-2">
                       {project.github && (
                         <a

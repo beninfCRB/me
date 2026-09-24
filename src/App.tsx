@@ -3,12 +3,11 @@ import { Navbar } from "@/components/layout/Navbar"
 import { Footer } from "@/components/layout/Footer"
 import { Hero } from "@/components/sections/Hero"
 import { About } from "@/components/sections/About"
-import { Skills } from "@/components/sections/Skills"
 import { Experience } from "@/components/sections/Experience"
 import { Education } from "@/components/sections/Education"
 import { Projects } from "@/components/sections/Projects"
 import { Contact } from "@/components/sections/Contact"
-import TechMarquee from "@/components/sections/TechMarquee"
+import { TechStack } from "@/components/sections/TechStack"
 import { AnimatedBackground } from "@/components/magic/ParticleBackground"
 
 function App() {
@@ -35,9 +34,8 @@ function App() {
         <Navbar />
         <main>
           <Hero />
-          <TechMarquee />
+          <TechStack />
           <About />
-          <Skills />
           <Experience />
           <Education />
           <Projects />
