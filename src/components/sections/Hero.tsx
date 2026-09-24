@@ -101,7 +101,7 @@ export function Hero() {
           >
             <div className="relative">
               <Avatar
-                src="/profile.png"
+                src="profile.png"
                 alt={personal.name}
                 fallback="BN"
                 size="xl"

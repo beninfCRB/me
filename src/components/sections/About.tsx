@@ -31,7 +31,7 @@ export function About() {
             <Card className="p-6 md:p-8 glass-card">
               <div className="flex items-start gap-4 mb-6">
                 <Avatar
-                  src="/profile.png"
+                  src="profile.png"
                   alt={personal.name}
                   fallback="BN"
                   size="lg"

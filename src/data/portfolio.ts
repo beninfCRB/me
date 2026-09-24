@@ -141,7 +141,7 @@ export const projects: Project[] = [
     technologies: ["React", "Nest JS", "Docker", "PostgreSQL", "Microservices"],
     github: "#",
     link: "https://layanan-dana-masyarakat.bpdlh.id/",
-    image: "/project-layanan-dana-masyarakat.png",
+    image: "project-layanan-dana-masyarakat.png",
   },
   {
     id: "2",
@@ -151,7 +151,7 @@ export const projects: Project[] = [
     technologies: ["Next.js", "Express JS", "Docker", "Redis", "MongoDB"],
     github: "#",
     link: "https://cnl.fcterp.com/signin",
-    image: "/project-citra-niaga-logistik.png",
+    image: "project-citra-niaga-logistik.png",
   },
   {
     id: "3",
@@ -161,7 +161,7 @@ export const projects: Project[] = [
     technologies: ["React", "Laravel", "MySQL", "Docker"],
     github: "#",
     link: "#",
-    image: "/project-mis-bpdlh.png",
+    image: "project-mis-bpdlh.png",
   },
   {
     id: "4",
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "#",
     link: "#",
-    image: "/project-web-portofolio.png",
+    image: "project-web-portofolio.png",
   },
 ];
 
